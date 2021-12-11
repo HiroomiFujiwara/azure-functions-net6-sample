@@ -4,7 +4,8 @@
     /// ユーザー取得レスポンス
     /// </summary>
     public record GetUserResponse(
-        string? Id,
+        Guid Id,
+        string? IdaasId,
         string? FirstName,
         string? LastName)
     {

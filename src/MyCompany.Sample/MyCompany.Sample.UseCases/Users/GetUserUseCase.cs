@@ -14,6 +14,7 @@
         {
             var user = new GetUserResponse(
                 request.Id,
+                request.IDaasId,
                 "hoge",
                 "HOGE");
             return await Task.FromResult(user);

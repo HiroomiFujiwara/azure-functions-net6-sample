@@ -348,8 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
-/src/MyCompany.Sample/MyCompany.Sample.Presentations.Functions/Properties/serviceDependencies.local.json
-/src/MyCompany.Sample/MyCompany.Sample.Presentations.Functions/Properties/serviceDependencies.json
-/src/MyCompany.Sample/MyCompany.Sample.Presentations.Functions/Properties/serviceDependencies.func-hf-sample-jpneast-002 - Zip Deploy.json
-/src/MyCompany.Sample/MyCompany.Sample.Presentations.Functions/Properties/serviceDependencies.func-hf-sample-jpneast-001 - Zip Deploy.json
-/src/MyCompany.Sample/MyCompany.Sample.Presentations.Functions/Properties/ServiceDependencies
+/src/MyCompany.Sample/MyCompany.Sample.Presentations.Functions/Properties
+/src/MyCompany.Sample/MyCompany.Sample.Presentations.Functions/Properties

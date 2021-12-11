@@ -1,4 +1,6 @@
-﻿namespace MyCompany.Sample.Presentations.Functions.Users
+﻿using System;
+
+namespace MyCompany.Sample.Presentations.Functions.Users
 {
     /// <summary>
     /// ユーザー取得レスポンス
@@ -8,7 +10,12 @@
         /// <summary>
         /// ユーザーID
         /// </summary>
-        public string Id { get; set; }
+        public Guid Id { get; set; }
+
+        /// <summary>
+        /// IDaaS ID
+        /// </summary>
+        public string IdaasId { get; set; }
 
         /// <summary>
         /// ファーストネーム
