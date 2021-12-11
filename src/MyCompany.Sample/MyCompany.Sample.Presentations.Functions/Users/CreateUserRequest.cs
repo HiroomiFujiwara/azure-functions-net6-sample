@@ -2,6 +2,7 @@
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Resolvers;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
 namespace MyCompany.Sample.Presentations.Functions.Users;
@@ -16,6 +17,7 @@ public class CreateUserRequest
     /// ファーストネーム
     /// </summary>
     [OpenApiProperty(Nullable = false, Description = "The first name.")]
+    [JsonProperty(Required = Required.Always)]
     [Required]
     [RegularExpression(@"^[0-9a-zA-Z]*$")]
     [MaxLength(64)]
@@ -25,6 +27,7 @@ public class CreateUserRequest
     /// ラストネーム
     /// </summary>
     [OpenApiProperty(Nullable = false, Description = "The last name.")]
+    [JsonProperty(Required = Required.Always)]
     [Required]
     [RegularExpression(@"^[0-9a-zA-Z]*$")]
     [MaxLength(64)]

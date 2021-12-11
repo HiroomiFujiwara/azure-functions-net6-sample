@@ -3,10 +3,8 @@
 /// <summary>
 /// ユーザー追加レスポンス
 /// </summary>
-/// <param name="Id"></param>
-/// <param name="IdaasId"></param>
+/// <param name="Id">ユーザーID</param>
 public record CreateUserResponse(
-    Guid Id,
-    string? IdaasId)
+    Guid Id)
 {
 }
