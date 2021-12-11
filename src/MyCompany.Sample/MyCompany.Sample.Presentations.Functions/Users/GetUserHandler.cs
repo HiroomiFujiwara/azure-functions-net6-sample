@@ -43,7 +43,7 @@ public class GetUserHandler
         Description = "This gets a user.",
         Visibility = OpenApiVisibilityType.Important)]
     [OpenApiParameter(
-        "Id",
+        "id",
         Type = typeof(Guid),
         In = ParameterLocation.Path,
         Required = true,
@@ -57,7 +57,7 @@ public class GetUserHandler
         Description = "This returns the response")]
     [Function("Users.Get")]
     public async Task<HttpResponseData> Run(
-        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "users/{Id:guid}")]
+        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "users/{id:guid}")]
         HttpRequestData req,
         Guid id)
     {
